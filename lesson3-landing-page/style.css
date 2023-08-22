@@ -100,7 +100,6 @@ img {
 }
 .header__content {
   flex: 1;
-  height: 50vmin;
 }
 .header__content h1 {
   color: var(--color-white);
