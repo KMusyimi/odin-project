@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/rock-paper-scissors.png" type="image/png">
+    <script src="game.js" defer></script>
 </head>
 
 <body>
     <!-- rock beats scissors ,scissors beats paper, paper beats rock -->
+    <div class="container d--flex d--flex-col">
+        <header class="main__heading">
+            <h1>rock paper scissors</h1>
+            <figure class="header__img">
+                <img src="assets/images/rock-paper-scissors.png" alt="rock paper scissors image">
+            </figure>
+        </header>
+        <main class="main__game">
+            <section class="game__rules">
+                <h2>GamePlay Rules</h2>
+                <p>Please read the game play rules that are provided below&period; Then proceed to click the button
+                    below to play the game&period; </p>
+                <ul class="game__rules__list">
+                    <li class="rules__list">Paper beats Rock</li>
+                    <li class="rules__list">Scissors beats Paper</li>
+                    <li class="rules__list">Rock beats Scissors</li>
+                    <li class="rules__list">Each player is awarded a point to every round they win</li>
+                    <li class="rules__list">The player that earns 5 points first wins</li>
+                </ul>
+                <button class="play__game-btn">play game</button>
+            </section>
+            <div class="game__btn--hidden">
+                <button class="btn" id="rock"><img src="assets/images/rock.png" alt="hand rock image"></button>
+                <button class="btn" id="paper"><img src="assets/images/paper.png" alt="hand paper image"></button>
+                <button class="btn" id="scissors"><img src="assets/images/scissors.png"
+                        alt="hand scissors image"></button>
+            </div>
+            <button class="restart__btn--hidden">Restart Game</button>
+
+        </main>
+    </div>
 </body>
 
 </html>
